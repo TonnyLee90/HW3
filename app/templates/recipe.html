@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Add A New Recipe</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Profile ID</th>
+            <th>Username</th>
+            <th>sex</th>
+            <th>age</th>
+            <th>bio</th>
+        </tr>
+        <tr>
+            <th>{{ recipe.id }}</th>
+            <th>{{ recipe.title }}</th>
+            <th>{{ recipe.description}}</th>
+            <th>{{ recipe.ingredients}}</th>
+            <th>{{ recipe.instructions}}</th>
+            <th>{{ recipe.user.username }}</th>
+            <th>{{ recipe.created}}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

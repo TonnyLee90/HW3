@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form method="POST", action="">
+        {{ form.hidden_tag() }}
+        <p> {{form.username.label}} {{ form.username() }} </p>
+        <p> {{form.password.label}} {{ form.password() }} </p>
+        <p> {{form.submit()}} </p>
+    </form>
+</body>
+</html>
